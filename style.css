@@ -1,0 +1,130 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Segoe UI", sans-serif;
+}
+
+body {
+  background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
+  color: #fff;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.music-container {
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(10px);
+  border-radius: 25px;
+  box-shadow: 0 0 40px rgba(0, 0, 0, 0.5);
+  padding: 30px 25px;
+  width: 320px;
+  text-align: center;
+  position: relative;
+  animation: fadeIn 1s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+input[type="text"] {
+  width: 100%;
+  padding: 10px 15px;
+  border-radius: 10px;
+  border: none;
+  margin-bottom: 10px;
+  outline: none;
+  font-size: 14px;
+}
+
+#search-btn {
+  background-color: #1db954;
+  border: none;
+  color: #fff;
+  padding: 10px 15px;
+  font-weight: bold;
+  border-radius: 10px;
+  cursor: pointer;
+  width: 100%;
+  margin-bottom: 15px;
+  transition: 0.3s ease;
+}
+
+#search-btn:hover {
+  background-color: #17a44c;
+}
+
+.img-container {
+  margin-bottom: 15px;
+}
+
+.img-container img {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  object-fit: cover;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
+  transition: transform 0.3s ease;
+}
+
+.img-container img:hover {
+  transform: scale(1.05);
+}
+
+.music-info {
+  margin-bottom: 10px;
+}
+
+#title {
+  font-size: 18px;
+  margin-bottom: 5px;
+  color: #ffffff;
+  font-weight: 500;
+}
+
+.progress-container {
+  background: #444;
+  height: 6px;
+  border-radius: 5px;
+  cursor: pointer;
+  margin: 8px 0;
+  width: 100%;
+}
+
+.progress {
+  background: #1db954;
+  height: 100%;
+  width: 0%;
+  border-radius: 5px;
+  transition: width 0.3s ease;
+}
+
+.navigation {
+  margin-top: 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navigation button {
+  background: none;
+  border: none;
+  color: #fff;
+  font-size: 28px;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.navigation button:hover {
+  color: #1db954;
+}
